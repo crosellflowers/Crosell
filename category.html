@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categories · Crosell</title>
+  <meta name="description" content="Shop handmade crochet flowers by category: hanging baskets, potted flowers and custom pieces from Crosell.">
+  <meta name="theme-color" content="#F8F4E7">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Categories · Crosell">
+  <meta property="og:description" content="Hand-crocheted flowers and hanging baskets that never wilt.">
+  <meta property="og:image" content="images/bluebell-balcony.jpg">
+  <link rel="icon" type="image/png" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" href="images/logo-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Poppins:wght@500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261020b">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ========== Header ========== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-192.png" width="192" height="192" alt="">
+        <span data-shop-name>Crosell</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <button class="search-btn" id="searchOpen" aria-label="Search products">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+          <span class="search-label-text">Search</span>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="index.html#shop">Shop</a>
+        <a href="category.html" aria-current="page">Categories</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="bag-btn" id="bagOpen" aria-label="Open your bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="bag-label">Bag</span>
+          <span class="bag-count" id="bagCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container back-bar">
+      <a class="back-btn" href="index.html" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back</a>
+    </div>
+    <div id="categoryPage">
+      <!-- ========== Category header ========== -->
+      <section class="cat-hero">
+        <div class="container">
+          <div class="cat-hero-copy reveal">
+            <p class="eyebrow" id="catEyebrow">Categories</p>
+            <h1 id="catTitle">Shop by category</h1>
+            <nav class="cat-switch" id="catSwitch" aria-label="Categories"></nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== Products in this category ========== -->
+      <section class="section cat-products" id="catProductsSection">
+        <div class="container">
+          <div class="products" id="categoryProducts"></div>
+        </div>
+      </section>
+
+      <!-- ========== Other categories ========== -->
+      <section class="section cat-more">
+        <div class="container">
+          <div class="section-head reveal" id="catMoreHead">
+            <p class="eyebrow">Keep exploring</p>
+            <h2>More categories</h2>
+          </div>
+          <div class="category-grid" id="categoryGrid"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">
+            <img src="images/logo-192.png" width="192" height="192" alt="">
+            <span data-shop-name>Crosell</span>
+          </a>
+          <p class="footer-blurb">Handcrafted crochet flowers,<br>made with love to create lasting<br>beautiful memories.</p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-policy.html">Refund &amp; Return Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="how-to-order.html">How to order</a></li>
+            <li><a href="order.html">Place your order</a></li>
+            <li><a href="custom-orders.html">Custom orders</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Get in touch</h4>
+          <div class="social">
+            <a class="social-btn wa" data-wa="hello" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><g transform="translate(7.2 7.2) scale(1.4)"><path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.2L2.6 21.4l4.7-1.2A9.4 9.4 0 1 0 12 2.6z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/><path fill="#fff" transform="translate(6.3 6.3) scale(.48)" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></g></svg></a>
+            <a class="social-btn ig" data-ig aria-label="Instagram" title="Instagram"><svg viewBox="0 0 48 48" aria-hidden="true"><defs><radialGradient id="igGrad" cx="28%" cy="108%" r="140%"><stop offset="0" stop-color="#FFD776"/><stop offset=".12" stop-color="#F9CE34"/><stop offset=".45" stop-color="#EE2A7B"/><stop offset="1" stop-color="#6228D7"/></radialGradient></defs><rect width="48" height="48" rx="13" fill="url(#igGrad)"/><rect x="11" y="11" width="26" height="26" rx="8" fill="none" stroke="#fff" stroke-width="3.4"/><circle cx="24" cy="24" r="6.3" fill="none" stroke="#fff" stroke-width="3.4"/><circle cx="31.8" cy="16.2" r="2.1" fill="#fff"/></svg></a>
+            <a class="social-btn fb" data-fb aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1877F2"/><path fill="#fff" d="M13.4 24v-8.6h2.9l.45-3.4H13.4V9.9c0-.98.28-1.65 1.68-1.65h1.79V5.23a24 24 0 0 0-2.6-.13c-2.58 0-4.34 1.57-4.34 4.46V12H7v3.4h2.93V24z"/></svg></a>
+          </div>
+          <ul class="contact-list">
+            <li><a data-email><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span class="contact-text">Email us</span></a></li>
+            <li><a data-phone><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 5.9 5.9l1.5-2.3L20 15.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span class="contact-text">Call us</span></a></li>
+            <li><span class="contact-row" data-address><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span class="contact-text">Bangalore, India</span></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> <span data-shop-name>Crosell</span></span>
+        <span>Made by hand, with love ✿</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Bag drawer ========== -->
+  <dialog class="drawer" id="drawer" aria-labelledby="drawerTitle">
+    <div class="drawer-head">
+      <h2 id="drawerTitle">Your bag</h2>
+      <button class="icon-btn" data-close aria-label="Close bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="bagBody"></div>
+    <div class="drawer-foot" id="bagFoot">
+      <div class="total"><span>Total</span><span id="bagTotal"></span></div>
+      <a class="btn btn-primary btn-block" href="order.html" id="checkout">Place your order →</a>
+      <p class="fine">Next, add your delivery details. Nothing is charged on this website.</p>
+    </div>
+  </dialog>
+
+  <!-- ========== Product modal ========== -->
+  <dialog class="modal" id="productModal" aria-labelledby="mName">
+    <button class="icon-btn modal-close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal-grid">
+      <div class="modal-gallery">
+        <div class="modal-main"><img id="mImage" src="" alt=""><video id="mVideo" controls playsinline muted loop preload="none" hidden></video></div>
+        <div class="thumbs" id="mThumbs"></div>
+      </div>
+      <div class="modal-info">
+        <p class="eyebrow">Handmade to order</p>
+        <h2 id="mName"></h2>
+        <p class="modal-price" id="mPrice"></p>
+        <p class="modal-desc" id="mDesc"></p>
+        <ul class="checks" id="mDetails"></ul>
+        <div class="modal-buy">
+          <div class="qty lg" role="group" aria-label="Quantity">
+            <button data-mqty="-1" aria-label="Decrease quantity">−</button>
+            <span id="mQty">1</span>
+            <button data-mqty="1" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn btn-primary" id="mBuy">Buy</button>
+          <button class="btn btn-ghost" id="mAdd">Add to bag</button>
+        </div>
+        <a class="modal-ask" id="mAsk" target="_blank" rel="noopener">Have a question about this piece? Ask us on WhatsApp →</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ========== Search ========== -->
+  <dialog class="search-dialog" id="searchDialog" aria-label="Search products">
+    <div class="search-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+      <input id="searchInput" type="search" placeholder="Search tulips, baskets, colors…" autocomplete="off" aria-label="Search products" aria-controls="searchResults">
+      <button class="icon-btn" data-close aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="search-results" id="searchResults" aria-live="polite"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=20261020b"></script>
+</body>
+</html>
